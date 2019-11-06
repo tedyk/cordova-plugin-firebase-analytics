@@ -29,18 +29,10 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         </config-file>
         <header-file src="src/ios/FirebaseAnalyticsPlugin.h" />
         <source-file src="src/ios/FirebaseAnalyticsPlugin.m" />
-    <pods-config ios-min-version="9.0" use-frameworks="true">
+        <pods-config ios-min-version="9.0" use-frameworks="true">
 			<source url="https://github.com/CocoaPods/Specs.git" />
 		</pods-config>
 		<pod name="Firebase/Analytics" spec="~> 4.0" />
-        <!-- <podspec>
-            <config>
-                <source url="https://github.com/CocoaPods/Specs.git"/>
-            </config>
-            <pods>
-                <pod name="Firebase/Analytics" spec="~> 4.0" />
-            </pods>
-        </podspec> -->
     </platform>
     <platform name="android">
         <preference name="FIREBASE_CORE_VERSION" default="17.0.+"/>

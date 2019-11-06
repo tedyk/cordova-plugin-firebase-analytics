@@ -45,7 +45,7 @@
 - (void)setEnabled:(CDVInvokedUrlCommand *)command {
     bool enabled = [[command.arguments objectAtIndex:0] boolValue];
 
-    [FIRAnalytics setAnalyticsCollectionEnabled:enabled];
+    [[FIRAnalyticsConfiguration sharedInstance] setAnalyticsCollectionEnabled:enabled];
 
     CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
